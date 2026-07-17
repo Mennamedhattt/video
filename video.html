@@ -1,0 +1,349 @@
+video
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday My handsome man❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+#cover{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    cursor:pointer;
+}
+
+.cover-text{
+    text-align:center;
+    padding:20px;
+}
+
+.cover-text h1{
+    font-family:"Great Vibes";
+    font-size:60px;
+    color:#000000;
+    text-shadow:0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.cover-text p{
+    margin-top:18px;
+    font-size:18px;
+    color:#000000;
+    letter-spacing:1px;
+    animation:pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse{
+    0%,100%{opacity:.6;}
+    50%{opacity:1;}
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#0a0a0a url("C:\\Users\\lenovo\\Downloads\\photo_2026-07-17_19-54-49-removebg-preview (1).png") top center / 100% auto no-repeat scroll;
+overflow-x:hidden;
+color:rgb(255, 255, 255);
+text-align:center;
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+z-index:-1;
+}
+
+.hero{
+min-height:140vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding:20px;
+}
+
+.hero h1{
+font-family:"Great Vibes";
+font-size:70px;
+color:#f8f8f8;
+}
+
+.hero p{
+margin-top:20px;
+font-size:22px;
+max-width:700px;
+line-height:1.7;
+}
+
+button{
+margin-top:40px;
+padding:18px 45px;
+font-size:18px;
+border:none;
+border-radius:40px;
+cursor:pointer;
+background:#000000;
+color:rgb(17, 16, 16);
+transition:.4s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+.section{
+padding:90px 25px;
+}
+
+.photo{
+width:320px;
+max-width:90%;
+border-radius:25px;
+box-shadow:0 0 40px rgba(255,255,255,.25);
+}
+
+.message{
+max-width:850px;
+margin:auto;
+font-size:22px;
+line-height:2;
+}
+
+.gallery{
+display:flex;
+justify-content:center;
+}
+
+.footer{
+padding:70px;
+font-size:30px;
+font-family:"Great Vibes";
+color:#ffd6ef;
+}
+
+audio{
+margin-top:25px;
+}
+
+.heart{
+position:fixed;
+font-size:25px;
+animation:float 7s linear infinite;
+}
+
+@keyframes float{
+0%{ transform:translateY(100vh); opacity:0; }
+20%{ opacity:1; }
+100%{ transform:translateY(-120vh); opacity:0; }
+}
+
+#videoOverlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index:9998;
+    flex-direction:column;
+}
+
+#videoOverlay video{
+    max-width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+#videoOverlay button{
+    margin-top:20px;
+    padding:12px 30px;
+    font-size:16px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="cover" onclick="openWebsite()">
+    <div class="cover-text">
+        <h1>Happy Birthday My Handsome Man❤️</h1>
+        <img src="C:\\Users\\lenovo\\Downloads\\photo_2026-07-17_19-54-49-removebg-preview (1).png" alt=" Messi celebrates ENG/Abdelrhman" id="letter" onclick="openWebsite()">
+        <p>tap anywhere to open ❤️</p>
+    </div>
+</div>
+
+<div id="videoOverlay">
+    <video id="introVideo" src="C:\\Users\\lenovo\\Downloads\\IMG_3390.MOV" playsinline controls></video>
+</div>
+
+
+<canvas id="stars"></canvas>
+
+<section class="hero">
+<h1>Happy Birthday My Handsome Man❤️</h1>
+<p>
+Today is all about celebrating the most amazing person in my life.
+Thank you for being my happiness, my peace,
+and my greatest blessing.
+</p>
+<button onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+Open Your Surprise ❤️
+</button>
+</section>
+
+
+<section class="section">
+<h2 style="font-size:42px;margin-bottom:30px;">To My Love ❤️</h2>
+<div class="message">
+Happy Birthday, My Love.
+<br><br>
+Every moment with you has become one of my favorite memories.
+You make ordinary days feel magical just by being there.
+<br><br>
+I pray that this year brings you endless happiness,
+success beyond your dreams,
+good health,
+and every beautiful thing your heart wishes for.
+<br><br>
+Thank you for loving me,
+supporting me,
+and making me smile even on my hardest days.
+<br><br>
+I can't wait to celebrate many more birthdays together.
+<br><br>
+I love you more than words can ever describe.
+❤️
+</div>
+</section>
+
+<section class="section">
+<h2 style="font-size:40px;">Our Song 🎵</h2>
+<p style="margin:20px">Press Play</p>
+<audio controls>
+<source src="music/song.mp3" type="audio/mpeg">
+</audio>
+</section>
+
+<section class="section">
+    <h2 style="font-size:45px;">One Last Thing...</h2>
+    <button onclick="document.getElementById('heart').scrollIntoView({behavior:'smooth'})">
+        Open My Heart ❤️
+    </button>
+</section>
+
+<section class="section" id="heart">
+    <h2 style="font-size:42px;margin-bottom:40px;">My Heart ❤️</h2>
+    <div class="gallery">
+        <img src="images/photo1.jpg" class="photo" alt="us">
+    </div>
+</section>
+
+<section class="section" id="game">
+    <h2 style="font-size:42px;margin-bottom:20px;">لعبة صغيرة 😏❤️</h2>
+    <p style="font-size:24px;margin-bottom:30px;">بتحبني؟</p>
+    <button onclick="loveGame(this)">أه</button>
+    <button onclick="loveGame(this)" style="margin-right:20px;">أه طبعاً</button>
+    <p id="gameResult" style="margin-top:25px;font-size:22px;min-height:1.4em;color:#ffd6ef;"></p>
+</section>
+
+<div class="footer" id="final">
+Forever &amp; Always,
+<br>
+Your ONE&ONLY Hetta: Menna ❤️
+</div>
+
+<script>
+function openWebsite(){
+document.getElementById("cover").style.display = "none";
+const overlay = document.getElementById("videoOverlay");
+const video = document.getElementById("introVideo");
+overlay.style.display = "flex";
+video.currentTime = 0;
+video.play().catch(()=>{});
+}
+
+function closeVideo(){
+const overlay = document.getElementById("videoOverlay");
+const video = document.getElementById("introVideo");
+video.pause();
+overlay.style.display = "none";
+}
+
+
+let loveClickCount = 0;
+function loveGame(btn){
+    document.getElementById("gameResult").textContent = loveResponses[loveClickCount % loveResponses.length];
+    loveClickCount++;
+    confetti();
+}
+
+function showLove(){
+alert("Happy Birthday My Forever ❤️\n\nI Love You Endlessly.");
+confetti();
+}
+
+function confetti(){
+for(let i=0;i<120;i++){
+let h=document.createElement("div");
+h.innerHTML="❤️";
+h.className="heart";
+h.style.left=Math.random()*100+"vw";
+h.style.animationDuration=(4+Math.random()*4)+"s";
+document.body.appendChild(h);
+setTimeout(()=>h.remove(),8000);
+}
+}
+
+const canvas=document.getElementById("stars");
+const ctx=canvas.getContext("2d");
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+let stars=[];
+for(let i=0;i<200;i++){
+stars.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+r:Math.random()*2
+});
+}
+
+function draw(){
+ctx.clearRect(0,0,canvas.width,canvas.height);
+ctx.fillStyle="white";
+stars.forEach(s=>{
+ctx.beginPath();
+ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+ctx.fill();
+s.y+=0.2;
+if(s.y>canvas.height)s.y=0;
+});
+requestAnimationFrame(draw);
+}
+draw();
+</script>
+
+</body>
+</html>
